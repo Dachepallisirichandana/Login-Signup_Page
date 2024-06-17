@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            .parent{
+                display: flex;
+                width: 100%;
+            }
+            .login{
+                border: 1px solid black;
+                width: 50%;
+                height: 500px;
+                background: url('lockimage.jpg');
+                color: white;
+                border-radius: 20px;
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+            }
+            form{
+                display: block;
+                box-sizing: border-box;
+                padding: 40px;
+                width: 100%;
+                height: 100px;
+                backdrop-filter: brightness(40%);
+                flex-direction: column;
+                display: flex;
+                gap:5px;
+            }
+           label{
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+           }
+           input{
+            background: rgba(255, 255, 255, 0.3);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            padding: 0px 20px;
+            border: none;
+            margin-bottom: 20px;
+            color: white;
+           }
+           button{
+            background: rgba(45, 126, 231);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px;
+            border: none;
+            margin: 10px 0px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+           }
+           .signup{
+                border: 1px solid black;
+                width: 50%;
+                height: 500px;
+                background: url('lockimage.jpg');
+                color: white;
+                border-radius: 20px;
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+                float: right;
+           } 
+
+        </style>
+     </head>
+     <body>
+       <div class="parent"> 
+        <div class="login">
+            <form>
+                <h1>Login</h1>
+                <label>Username</label>
+                <input type="text">
+                <label>Password</label>
+                <input type="password">
+                <button>Submit</button>
+             </form>
+        </div>  
+        
+        <div class="signup">
+            <form>
+                <h2>Signup</h2>
+                <label>Username</label>
+                <input type="text">
+                <label>Password</label>
+                <input type="password">
+                <button>Submit</button>
+
+             </form>
+        </div>
+    </div>
+    </body>
+</html>    
